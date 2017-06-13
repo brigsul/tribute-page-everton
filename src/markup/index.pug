@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+	head
+		title Brian Sullivan - Web Developer
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel="stylesheet",href="/normalize.css")
+		link(rel="stylesheet",href="/main.css")
+		link(rel="stylesheet",href="/palette.css")
+	body
+		#sidebar.default-primary-color.light-primary-text-color
+			#sidebar-menu.light-primary-text-color
+				a#about(href='#')
+					.logo-holder
+						img.image(src='about.svg')
+						.text.accent-text-color ABOUT
+				a#skills(href='#')
+					.logo-holder
+						img.image(src='skills.svg')
+						.text.accent-text-color SKILLS
+				a#my-works(href='#')
+					.logo-holder
+						img.image(src='my-works.svg')
+						.text.accent-text-color PROJECTS
+				a#contact(href='#')
+					.logo-holder
+						img.image(src='contact.svg')
+						.text.accent-text-color CONTACT
+		#main
+			#home
+				#headline-text-container.accent-color
+					h1.headline-text.light-primary-text-color
+						| Hi!
+						br
+						|  My name is Brian Sullivan.
+						br
+						|  I am a web developer.
+					h2.subtitle.secondary-text-color Front-End / Back-End / JavaScript Developer
+					button#action-button.primary-text-color Don't Wait!  Contact Me!
+				#bottom-link-container
+					p#bottom-link.secondary-text-color
+						| Check out more about what I do
+						br
+						|  v

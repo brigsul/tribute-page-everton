@@ -1,0 +1,28 @@
+{
+  "name": "new-project-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "prebuild": "npm run clean",
+    "build": "npm run build:assets | npm run build:styles | npm run build:markup",
+    "build:styles": "stylus -w src/styles/*.styl -m -o dist/ && hashmark -s -l 8 -m assets.json dist/*.css \"dist/{name}{hash}{ext}\"",
+    "build:markup": "pug -w src/markup/index.pug --obj assets.json -o dist",
+    "build:assets": "imagemin src/assets/* -o dist/",
+    "watch:build": "nodemon -q -w src/ --ext \".\" --exec \"npm run build\"",
+    "serve": "live-server dist/",
+    "dev": "npm run serve | npm run build"
+  },
+  "author": "Brian Sullivan",
+  "license": "MIT",
+  "devDependencies": {
+    "hashmark": "^4.1.0",
+    "imagemin": "^5.3.1",
+    "live-server": "^1.2.0",
+    "nodemon": "^1.11.0",
+    "pug": "^2.0.0-rc.2",
+    "rimraf": "^2.6.1",
+    "stylus": "^0.54.5"
+  },
+  "description": ""
+}
