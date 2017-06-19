@@ -1,28 +1,84 @@
 doctype html
 html(lang='en')
   head
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
     title Everton Football Club
     meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(href='normalize.css', rel='stylesheet')
-    link(href='main.css', rel='stylesheet')
-    link(href='palette.css', rel='stylesheet')
-    script(src='https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js', type='text/javascript')
+    meta(name='viewport' content='width=500, initial-scale=1')
+    link(href='normalize.css', text='type/css', rel='stylesheet')
+    link(href='main.css', text='type/css', rel='stylesheet')
+    link(href='palette.css', text='type/css', rel='stylesheet')
+    //script(src='https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js', type='text/javascript')
   body
     #main
       h1#title Everton Football Club
+        br
+        span#subtitle The People's Club
       #img-div
-        img#image(src='#')
-        p#img-caption lorem ipsum 
+        img#image(src='/crest.jpg')
+        p#img-caption Everton's Crest in 2017 
       div#tribute-info
-        h2 Trophies
-        ul
-          li
-          li
-          li
-        h2 Famous Players
-        ul
-          li
-          li
-          li
+        h2 Domestic Honors
+        div.column.first-row
+          h3 Nine-Time First Division Champions
+          ul
+            li 1890-91
+            li 1914-15
+            li 1927-28
+            li 1931-32
+            li 1938-39
+            li 1962-63
+            li 1969-70
+            li 1984-85
+            li 1986-87
+
+        div.column.first-row
+          h3 Five-Time FA Cup Champions
+          ul
+            li 1905-06
+            li 1932-33
+            li 1965-66
+            li 1983-84
+            li 1994-95
+
+        div.column.first-row
+          h3 Nine-Time FA Charity Shield Winnner
+          ul
+            li 1928
+            li 1932
+            li 1963
+            li 1970
+            li 1984
+            li 1985
+            li 1986 (shared)
+            li 1987
+            li 1995
+
+        h2 European Honors
+        div.column
+          h3 European Cup Winners' Cup Champions
+          ul
+            li 1984-85
+            
+        h2 Current Squad
+        div.column#roster
+          h3 Manager
+          ul
+            li Ronald Koeman
+          h3 Starting XI
+          ul
+            li Joel Robles - GK
+            li Leighton Baines - LB
+            li Ashley Williams - CB
+            li Phil Jagielka - CB
+            li Seamus Coleman - RB
+            li Morgan Schneiderlin - CDM
+            li Idrsisa Gueye - CDM
+            li Tom Davies - CAM
+            li Kevin Mirallas - LM
+            li Ross Barkley - RM
+            li Romelu Lukaku - ST
+
+
+
         a(href='#' target='_blank')#tribute-link Get more info 
